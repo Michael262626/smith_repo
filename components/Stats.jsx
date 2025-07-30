@@ -1,0 +1,70 @@
+import Image from 'next/image'
+
+export default function Stats() {
+  const items = [
+    {
+      icon: "/people.f5a05521.svg",
+      title: "Strategic Business Planning & Growth",
+      description: "Actionable insights and tailored strategies to accelerate your business success.",
+      link: "#",
+      dark: false
+    },
+    {
+      icon: "/business.623a0dad.svg",
+      title: "Project Management Services",
+      description: "Expert project execution across industries, ensuring on-time and on-budget delivery.",
+      link: "#",
+      dark: false
+    },
+    {
+      icon: "/website.2001bc01.svg",
+      title: "Strategic Fundraising Solutions",
+      description: "Empowering startups and small businesses with targeted fundraising strategies for growth.",
+      link: "#",
+      dark: false
+    },
+    {
+      icon: "/award.b60ec45e.svg",
+      title: "Risk Management & Insurance",
+      description: "Comprehensive risk mitigation strategies paired with top-tier insurance solutions.",
+      link: "#",
+      dark: true
+    }
+  ];
+
+  return (
+    <section className="w-full bg-white mt-48 py-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`p-8 min-h-[450px] flex flex-col justify-between rounded shadow-sm border transition duration-300 ${
+              item.dark
+                ? "bg-[#242A42] text-white"
+                : "bg-white text-gray-900"
+            }`}
+          >
+            <div>
+              <div className="w-12 h-12 relative mb-6">
+                <Image src={item.icon} alt={item.title} layout="fill" />
+              </div>
+              <h3 className="text-lg font-bold mb-4">{item.title}</h3>
+              <p className="mb-8 text-sm leading-relaxed">{item.description}</p>
+            </div>
+            <a
+              href={item.link}
+              className={`inline-flex items-center px-12 py-3 border rounded-full font-medium transition ${
+                item.dark
+                  ? "border-[#FF7B47] bg-white text-[#FF7b47] text-orange hover:bg-[#242A42]"
+                  : "border-black text-black hover:bg-[#242A42] hover:text-white"
+              }`}
+            >
+              Learn More
+              <span className="ml-2">➜</span>
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
