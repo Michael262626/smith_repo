@@ -14,7 +14,7 @@ export default function Contact() {
               challenges and achieve lasting success.
             </p>
           </div>
-          <div className="relative w-full max-w-lg mx-auto lg:mx-0 h-48 lg:h-64">
+          <div className="relative w-full max-w-lg mx-auto lg:mx-0 h-48 lg:h-64 hidden sm:block">
             <img
               src="/map.png" // your half map image
               alt="Half Map"
@@ -33,13 +33,13 @@ export default function Contact() {
               src="/happy-guy.png"
               alt="Global Reach"
               loading="lazy"
-              className="w-full h-full object-cover"
+              className="w-full hidden sm:block h-full object-cover"
             />
           </div>
 
           {/* Form */}
           <div className="w-full lg:w-2/3 p-8 text-gray-900 flex flex-col justify-center">
-            <h3 className="text-3xl font-bold mb-6">Get A Free Consultation</h3>
+            <h3 className="text-5xl mb-6">Get A Free Consultation</h3>
             <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block font-semibold mb-1">Name*</label>
