@@ -14,7 +14,7 @@ export default function Contact() {
               challenges and achieve lasting success.
             </p>
           </div>
-          <div className="relative w-full max-w-lg mx-auto lg:mx-0 h-48 lg:h-64 hidden sm:block">
+          <div className="relative w-full max-w-lg mx-auto lg:mx-0 h-48 lg:h-64">
             <img
               src="/map.png" // your half map image
               alt="Half Map"

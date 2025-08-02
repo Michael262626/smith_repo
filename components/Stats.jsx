@@ -38,7 +38,7 @@ export default function Stats() {
       {items.map((item, index) => (
           <div
             key={index}
-            className={`p-8 min-h-[450px] flex flex-col justify-between rounded shadow-sm border transition duration-300 ${
+            className={`p-8 min-h-[450px] flex flex-col justify-between rounded shadow-sm transition duration-300 ${
               item.dark
                 ? "bg-[#242A42] text-white"
                 : "bg-white text-gray-900"
@@ -53,14 +53,14 @@ export default function Stats() {
             </div>
             <a
               href={item.link}
-              className={`inline-flex items-center px-3 py-1 border rounded-full font-medium transition ${
+              className={`inline-flex items-center w-[150px] justify-center px-4 py-2 border rounded-full font-medium text-base sm:text-base transition-colors duration-300 ${
                 item.dark
-                  ? "border-[#FF7B47] bg-white text-[#FF7b47] text-orange hover:bg-[#242A42]"
+                  ? "border-[#FF7B47] bg-white text-[#FF7B47] hover:bg-[#242A42] hover:text-white"
                   : "border-black text-black hover:bg-[#242A42] hover:text-white"
               }`}
             >
               Learn More
-              <span className="ml-2">➜</span>
+              <span className="ml-2 text-lg">➜</span>
             </a>
           </div>
         ))}
