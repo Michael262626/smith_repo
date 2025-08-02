@@ -6,8 +6,8 @@ export default function Contact() {
         {/* TOP - Text with Map */}
         <div className="mb-16 text-center space-x-4 grid grid-cols-1 sm:grid-cols-2 lg:text-left">
           <div>
-            <h2 className="text-5xl font-bold mb-6">We Have a Global Reach</h2>
-            <p className="max-w-3xl mx-auto lg:mx-0 mb-8">
+            <h2 className="text-6xl font-bold mb-6">We Have a Global Reach</h2>
+            <p className="max-w-3xl p-8 mx-auto lg:mx-0 mb-8">
               Smithswork LLC operates across multiple international locations, strategically 
               positioned to support businesses worldwide. Our expert consulting services 
               are available no matter where you are, helping you navigate complex 

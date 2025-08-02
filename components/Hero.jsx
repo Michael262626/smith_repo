@@ -14,17 +14,17 @@ export default function Hero() {
         <p className="max-w-xl mx-auto mt-4 text-lg">
           Driving success with industry-specific strategies, expert project management, and comprehensive risk mitigation.
         </p>
-        <div className="mt-12 flex justify-center space-x-6 flex-wrap">
-          <a
+        <div className="mt-12 flex flex-col sm:flex-row justify-center items-center sm:space-x-6 space-y-4 sm:space-y-0">
+        <a
             href="#ContactUs"
-            className="btn bg-[#FF7B47] border-[#FF7B47] text-white rounded-full px-8 py-3"
+            className="btn bg-[#FF7B47] border-[#FF7B47] text-white rounded-full px-8 py-3 text-center"
           >
             Request a Consultation
           </a>
           <a
             href="#Services"
-            className="btn bg-transparent border border-white text-white rounded-full px-8 py-3 hover:bg-gray-300 hover:text-black transition duration-300"
-            >
+            className="btn bg-transparent border border-white text-white rounded-full px-8 py-3 hover:bg-gray-300 hover:text-black transition duration-300 text-center"
+          >
             Discover Our Services
           </a>
         </div>
