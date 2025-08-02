@@ -37,8 +37,8 @@ export default function ServicesCarousel() {
   const Icon = services[activeIndex].icon;
 
   return (
-    <section className="py-12 px-6">
-      <div className="max-w-4xl mx-auto bg-white p-8 relative overflow-hidden">
+    <section className="py-14">
+      <div className="max-w-7xl mx-auto bg-white p-4 relative overflow-hidden">
         
         {/* Watermark Icon */}
         <div className="absolute top-4 left-4 opacity-10">

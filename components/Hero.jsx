@@ -31,7 +31,7 @@ export default function Hero() {
       </div>
 
       {/* Stats Section */}
-      <div className="w-[80%] text-black sm:w-full max-w-7xl py-6 mx-auto flex flex-col sm:flex-row justify-around sm:bg-white sm:absolute drop-shadow-2xl sm:top-[92%] sm:left-1/2 sm:-translate-x-1/2">
+      <div className="w-[80%] text-black sm:w-full max-w-7xl py-6 mx-auto flex flex-col sm:flex-row justify-around gap-y-4 sm:gap-y-0 sm:bg-white sm:absolute drop-shadow-2xl sm:top-[92%] sm:left-1/2 sm:-translate-x-1/2">
         <div className="flex items-center space-x-2 bg-white p-6 justify-center">
           <div className="w-12 h-12 relative">
             <Image src="/people.f5a05521.svg" alt="" layout="fill" />

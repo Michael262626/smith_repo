@@ -34,8 +34,8 @@ export default function Stats() {
 
   return (
     <section className="w-full bg-white mt-48 py-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {items.map((item, index) => (
+      <div className="w-[50%] sm:w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {items.map((item, index) => (
           <div
             key={index}
             className={`p-8 min-h-[450px] flex flex-col justify-between rounded shadow-sm border transition duration-300 ${
@@ -53,7 +53,7 @@ export default function Stats() {
             </div>
             <a
               href={item.link}
-              className={`inline-flex items-center px-12 py-3 border rounded-full font-medium transition ${
+              className={`inline-flex items-center px-3 py-1 border rounded-full font-medium transition ${
                 item.dark
                   ? "border-[#FF7B47] bg-white text-[#FF7b47] text-orange hover:bg-[#242A42]"
                   : "border-black text-black hover:bg-[#242A42] hover:text-white"
