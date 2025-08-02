@@ -40,7 +40,7 @@ export default function Navbar() {
       {drawerOpen && (
         <div className="sm:hidden fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setDrawerOpen(false)}>
           <div className="fixed right-0 top-0 w-64 bg-white h-full shadow-lg p-4" onClick={e => e.stopPropagation()}>
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex mt-20 flex-col space-y-4">
               <Link href="/" legacyBehavior><a onClick={() => setDrawerOpen(false)}>Home</a></Link>
               <Link href="/services" legacyBehavior><a onClick={() => setDrawerOpen(false)}>Services</a></Link>
               <a href="#AboutSmithswork" onClick={() => setDrawerOpen(false)}>About Us</a>

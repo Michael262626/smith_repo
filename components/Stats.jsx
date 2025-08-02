@@ -6,28 +6,28 @@ export default function Stats() {
       icon: "/people.f5a05521.svg",
       title: "Strategic Business Planning & Growth",
       description: "Actionable insights and tailored strategies to accelerate your business success.",
-      link: "#",
+      link: "/services",
       dark: false
     },
     {
       icon: "/business.623a0dad.svg",
       title: "Project Management Services",
       description: "Expert project execution across industries, ensuring on-time and on-budget delivery.",
-      link: "#",
+      link: "/services",
       dark: false
     },
     {
       icon: "/website.2001bc01.svg",
       title: "Strategic Fundraising Solutions",
       description: "Empowering startups and small businesses with targeted fundraising strategies for growth.",
-      link: "#",
+      link: "/services",
       dark: false
     },
     {
       icon: "/award.b60ec45e.svg",
       title: "Risk Management & Insurance",
       description: "Comprehensive risk mitigation strategies paired with top-tier insurance solutions.",
-      link: "#",
+      link: "/services",
       dark: true
     }
   ];
