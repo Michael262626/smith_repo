@@ -34,35 +34,79 @@ const services = [
     ]
   },
   {
-    title: "Revenue Growth\nAcceleration Program",
+    title: "Customer Retention &\nUpsell Optimization",
     icon: BriefcaseIcon,
     idealFor: [
-      "Contractors",
-      "Auto shops",
-      "B2B service providers seeking to scale"
+      "Firms experiencing high",
+      "churn or low repeat ",
+      "business"
     ],
     description: [
-      "Revenue diagnostics & 90-day growth strategy",
-      "Sales pipeline tuning and forecasting tools",
-      "Lead generation strategy (digital + direct outreach)",
-      "Weekly check-ins and performance tracking",
-      "Outcome: A clear, measurable roadmap to revenue expansion"
+      "Customer journey mapping",
+      "Upsell/cross-sell strategies (e.g. fleet packages, warranties",
+      " Referral and loyalty program setup",
+      " Client satisfaction measurement tools",
+      "Outcome: Increased client lifetime value and revenue stability"
     ]
   },
   {
-    title: "Revenue Growth\nAcceleration Program",
+    title: "Marketing-to-Sales\nFunnel Alignment",
     icon: BriefcaseIcon,
     idealFor: [
-      "Contractors",
-      "Auto shops",
-      "B2B service providers seeking to scale"
+      "Companies struggling to",
+      "convert marketing leads",
+      "into paying clients"
     ],
     description: [
-      "Revenue diagnostics & 90-day growth strategy",
-      "Sales pipeline tuning and forecasting tools",
-      "Lead generation strategy (digital + direct outreach)",
-      "Weekly check-ins and performance tracking",
-      "Outcome: A clear, measurable roadmap to revenue expansion"
+      "Offer and messaging optimization",
+      "High-converting lead magnets (checklists, guides, etc)",
+      "Landing page & follow-up email sequence development",
+      "CRM-integrated lead tracking and analytics",
+      "Outcome: Better ROI from marketing efforts \n and improved lead conversion",
+    ]
+  },
+  {
+    title: "Revenue Operations-\nas-a-Service (RevOps)",
+    icon: BriefcaseIcon,
+    idealFor: [
+      "Growing businesses",
+      "needing structure, data",
+      "and performance insight"
+    ],
+    description: [
+      "KPI dashboard setup (CAC, LTV, NRR, etc.)",
+      "Forecasting and revenue reporting tools",
+      "SOPs for quoting, renewals, and onboarding",
+      "Quarterly revenue audits and/nrecommendations Outcome: Improved\ndecision-making and financial visibility",
+    ]
+  },
+  {
+    title: "Strategic Fundraising\nSupport (Equity or Debt)",
+    icon: BriefcaseIcon,
+    idealFor: [
+      "Owners seeking capital to",
+      "grow, invest, or expand",
+    ],
+    description: [
+      " Pitch deck and financial modeling support",
+      "Capital strategy (SBA, debt, equity, AR financing)",
+      "Lender and investor introductions",
+      "Fundraising project coordination Outcome:\nStronger access to capital with a compelling growth narrative",
+    ]
+  },
+  {
+    title: "Partnership & Channel\nDevelopment",
+    icon: BriefcaseIcon,
+    idealFor: [
+      "Businesses seeking new",
+      "revenue through alliances",
+      "and distribution"
+    ],
+    description: [
+      "Strategic partner mapping",
+      "Co-branded offer development",
+      "Partnership outreach & activation tools",
+      "Revenue-sharing model templates\nOutcome: New, recurring revenue streams\nvia aligned partner",
     ]
   },
 ];
@@ -91,7 +135,7 @@ export default function ServicesCarousel() {
           {/* Ideal For */}
           <div>
             <h3 className="font-bold mb-2">Ideal for:</h3>
-            <ul className="list-none space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
+            <ul className="list-none whitespace-pre-line space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
               {services[activeIndex].idealFor.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -101,7 +145,7 @@ export default function ServicesCarousel() {
           {/* What You Get */}
           <div>
             <h3 className="font-bold mb-2">What You Get:</h3>
-            <ul className="list-disc pl-5 space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
+            <ul className="list-disc whitespace-pre-line pl-5 space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
               {services[activeIndex].description.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
