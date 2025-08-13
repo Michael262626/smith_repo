@@ -1,10 +1,14 @@
 import { useState } from "react";
+import image1 from "../public/images/IMG_1164.JPG";
+import image3 from "../public/images/IMG_1166.JPG";
+import image6 from "../public/images/IMG_1161.JPG";
+import image7 from "../public/images/IMG_1163.JPG";
 import { BriefcaseIcon, ClipboardListIcon, CurrencyDollarIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 
 const services = [
   {
     title: "Revenue Growth\nAcceleration Program",
-    icon: BriefcaseIcon,
+    image: image1,
     idealFor: [
       "Contractors",
       "Auto shops",
@@ -35,7 +39,7 @@ const services = [
   },
   {
     title: "Customer Retention &\nUpsell Optimization",
-    icon: BriefcaseIcon,
+    image: image3,
     idealFor: [
       "Firms experiencing high",
       "churn or low repeat ",
@@ -82,7 +86,7 @@ const services = [
   },
   {
     title: "Strategic Fundraising\nSupport (Equity or Debt)",
-    icon: BriefcaseIcon,
+    image: image6,
     idealFor: [
       "Owners seeking capital to",
       "grow, invest, or expand",
@@ -96,7 +100,7 @@ const services = [
   },
   {
     title: "Partnership & Channel\nDevelopment",
-    icon: BriefcaseIcon,
+    image: image7,
     idealFor: [
       "Businesses seeking new",
       "revenue through alliances",
@@ -117,45 +121,53 @@ export default function ServicesCarousel() {
 
   return (
     <section className="py-14">
-      <div className="max-w-7xl mx-auto bg-white p-4 relative overflow-hidden">
-        
-        {/* Watermark Icon */}
-        <div className="absolute top-4 left-4 opacity-10">
-          <Icon className="w-16 h-16 text-gray-400" />
+      <div className="max-w-7xl mx-auto bg-white relative overflow-hidden">
+
+        {/* Top Section with Background Image */}
+        <div className="relative h-48 md:h-56">
+          {/* Background Image */}
+          <img
+            src={services[activeIndex].image.src || services[activeIndex].image}
+            alt={services[activeIndex].title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+
+          {/* Overlay (optional for readability) */}
+          <div className="absolute inset-0 bg-black opacity-20"></div>
+
+          {/* Title */}
+          <div className="relative z-10 p-6">
+            <h2 className="text-3xl whitespace-pre-line font-bold text-white">
+              {services[activeIndex].title}
+            </h2>
+          </div>
         </div>
-  
-        {/* Title */}
-        <h2 className="text-3xl whitespace-pre-line font-bold mb-8 text-gray-900 relative z-10">
-          {services[activeIndex].title}
-        </h2>
-  
+
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 relative z-10">
           {/* Ideal For */}
           <div>
             <h3 className="font-bold mb-2">Ideal for:</h3>
-            <ul className="list-none whitespace-pre-line space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
+            <ul className="list-none whitespace-pre-line space-y-1 text-gray-700">
               {services[activeIndex].idealFor.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
-  
+
           {/* What You Get */}
           <div>
             <h3 className="font-bold mb-2">What You Get:</h3>
-            <ul className="list-disc whitespace-pre-line pl-5 space-y-1 text-gray-700" style={{ fontFamily: "sans-serif, serif" }}>
+            <ul className="list-disc whitespace-pre-line pl-5 space-y-1 text-gray-700">
               {services[activeIndex].description.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
           </div>
-  
         </div>
-  
+
         {/* Pagination */}
-        <div className="flex justify-center mt-6 space-x-2 relative z-10">
+        <div className="flex justify-center mt-6 space-x-2 relative z-10 pb-6">
           {services.map((_, index) => (
             <button
               key={index}
@@ -172,5 +184,5 @@ export default function ServicesCarousel() {
         </div>
       </div>
     </section>
-  );  
+  );
 }
