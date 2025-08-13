@@ -1,6 +1,9 @@
 import { useState } from "react";
 import image1 from "../public/images/IMG_1164.JPG";
+import image2 from "../public/images/IMG_1160.JPG";
 import image3 from "../public/images/IMG_1166.JPG";
+import image4 from "../public/images/IMG_1165.JPG";
+import image5 from "../public/images/IMG_1162.JPG";
 import image6 from "../public/images/IMG_1161.JPG";
 import image7 from "../public/images/IMG_1163.JPG";
 import { BriefcaseIcon, ClipboardListIcon, CurrencyDollarIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
@@ -24,7 +27,7 @@ const services = [
   },
   {
     title: "Sales System Buildout\nfor Trades & Shops",
-    icon: BriefcaseIcon,
+    image: image3,
     idealFor: [
       "Businesses relying on",
       "referrals or walk-ins that",
@@ -39,10 +42,10 @@ const services = [
   },
   {
     title: "Customer Retention &\nUpsell Optimization",
-    image: image3,
+    image: image5,
     idealFor: [
       "Firms experiencing high",
-      "churn or low repeat ",
+      "churn or low repeat",
       "business"
     ],
     description: [
@@ -55,7 +58,7 @@ const services = [
   },
   {
     title: "Marketing-to-Sales\nFunnel Alignment",
-    icon: BriefcaseIcon,
+    image: image4,
     idealFor: [
       "Companies struggling to",
       "convert marketing leads",
@@ -71,7 +74,7 @@ const services = [
   },
   {
     title: "Revenue Operations-\nas-a-Service (RevOps)",
-    icon: BriefcaseIcon,
+    image: image2,
     idealFor: [
       "Growing businesses",
       "needing structure, data",
