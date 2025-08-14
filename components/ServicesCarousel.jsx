@@ -37,7 +37,7 @@ const services = [
       "B2B sales playbook development",
       "CRM selection, setup & training",
       " Target customer segmentation and outreach framework",
-      " Sales team coaching and accountability processes Outcome: Predictable sales process and shorter close cycles",
+      "Sales team coaching and accountability processes Outcome: Predictable sales process and shorter close cycles",
     ]
   },
   {
@@ -51,8 +51,8 @@ const services = [
     description: [
       "Customer journey mapping",
       "Upsell/cross-sell strategies (e.g. fleet packages, warranties",
-      " Referral and loyalty program setup",
-      " Client satisfaction measurement tools",
+      "Referral and loyalty program setup",
+      "Client satisfaction measurement tools",
       "Outcome: Increased client lifetime value and revenue stability"
     ]
   },

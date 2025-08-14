@@ -4,22 +4,22 @@ export default function Stats() {
   const items = [
     {
       icon: "/people.f5a05521.svg",
-      title: "Strategic Business Planning & Growth",
-      description: "Actionable insights and tailored strategies to accelerate your business success.",
+      title: "Revenue Growth\nAcceleration Program",
+      description: "Revenue diagnostics & 90-day growth strategy.",
       link: "/services",
       dark: false
     },
     {
       icon: "/business.623a0dad.svg",
-      title: "Project Management Services",
-      description: "Expert project execution across industries, ensuring on-time and on-budget delivery.",
+      title: "Sales System Buildout\nfor Trades & Shops",
+      description: "Sales team coaching and accountability processes Outcome: Predictable sales process and shorter close cycles",
       link: "/services",
       dark: false
     },
     {
       icon: "/website.2001bc01.svg",
-      title: "Strategic Fundraising Solutions",
-      description: "Empowering startups and small businesses with targeted fundraising strategies for growth.",
+      title: "Customer Retention &\nUpsell Optimization",
+      description: "Client satisfaction measurement tools\nOutcome: Increased client lifetime value and revenue stability.",
       link: "/services",
       dark: false
     },
